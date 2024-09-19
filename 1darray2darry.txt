@@ -1,0 +1,42 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace arr
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            //A one-dimensional array that contains six (6) names of your classmates. Then, print the names using a foreach loop.
+            String[] name = { "1. joshua", "2. cxyrus", "3. dioco", "4. hanzo", "5. yamat", "6. earth" };
+
+            foreach (String s in name)
+            {
+                Console.WriteLine(s);
+            }
+            //A two-dimensional array with two (2) rows and three (3) columns. Then, initialize the array with the first six (6) letters of the alphabet as its elements
+            char[,] alp =
+            {
+                { 'A', 'B', 'C'},
+                { 'D', 'E',  'F'}
+            };
+
+            for (int i = 0; i < 2; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    Console.Write(alp[i, j] + " ");
+                }
+                Console.WriteLine();
+            }
+           //A string with any message. Then, determine if the message contains the string, "hello".
+            String sentence = "Hello from the other side";
+            bool ch = sentence.Contains("Hello");
+            Console.WriteLine(ch);
+            Console.ReadKey();
+        }
+    }
+}
